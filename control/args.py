@@ -33,7 +33,7 @@ Example:
   ./ptb.py --link site -d wordlists\\10000.txt
   ./ptb.py --link site -d ~\\Desktop\\10000.txt --verbose
   ./ptb.py --link site -d %USERPROFILE%\\Desktop\\100.txt
-  ./ptb.py --link site --bruteforce 1 4 -c 5
+  ./ptb.py --link site --bruteforce 1 4 -c 8
 """
 
     def __init__(self):
