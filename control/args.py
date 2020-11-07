@@ -32,7 +32,7 @@ Attack Options:
 Example:
   ./ptb.py --link site -d wordlists\\10000.txt
   ./ptb.py --link site -d ~\\Desktop\\10000.txt --verbose
-  ./ptb.py --link site -d %USERPROFILE%\\Desktop\\100.txt
+  ./ptb.py --link site -d %USERPROFILE%\\Desktop\\500.txt
   ./ptb.py --link site --bruteforce 1 4 -c 8
 """
 
@@ -113,5 +113,5 @@ Example:
             print( type(self).intro )
             os._exit(0)
 
-        if self.dct_args.get("bruteforce") and not self.dct_args.get("character_set"):
+        if self.dct_args.get("bruteforce") and self.dct_args.get("character_set") is None:
             self.__args.character_set = 6
